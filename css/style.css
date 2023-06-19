@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Familjen Grotesk", sans-serif;
+  --secondery-font: "Exo", sans-serif;
+}
+.global_btn {
+  padding: 10px 32px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background: linear-gradient(
+    to left,
+    #8278ff 0%,
+    #ad32de 48.44%,
+    #ff80b9 100%
+  );
+  cursor: pointer;
+}
+.global_btn::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: -1;
+  transition: 200ms;
+}
+.global_btn::after {
+  content: attr(data);
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(
+    to left,
+    #8278ff 0%,
+    #ad32de 48.44%,
+    #ff80b9 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+.global_btn:hover::before {
+  opacity: 0;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.global_btn:hover::after {
+  color: white;
+}
+.global_btn2 {
+  padding: 10px 32px;
+  border: none;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #8278ff 0%,
+    #ad32de 48.44%,
+    #ff80b9 100%
+  );
+  cursor: pointer;
+  color: #fff;
+}
+.global_btn2:hover {
+  color: #fff;
+}
+
+/* 
+font-family: 'Exo', sans-serif;
+font-family: 'Familjen Grotesk', sans-serif;
+
+ */
+
+.header_area {
+  background: red !important;
+  z-index: 99;
+}
+.header_area .nav-item a {
+  font-family: var(--secondery-font);
+  font-weight: 400;
+  color: #212120;
+}
+
+/* hero section */
+.hero_secion {
+  background-image: url(../images/hero_bg.png);
+  width: 100%;
+  margin-top: -100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1 !important;
+}
+
+.hero_content {
+  height: 700px;
+}
+
+
+.hero_content h1 {
+  font-family: var(--secondery-font);
+}
+.hero_content p {
+  font-family: var(--primary-font);
+}
+
+/* experience_section */
+
+.experience_section {
+  background-image: url(../images/experience_bg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience_box {
+  border-right: 2px solid #fff;
+  padding: 0 50px;
+}
+.experience_box h2 {
+  font-family: var(--primary-font);
+  font-size: 54px;
+  font-weight: 600;
+  color: #0b27a8;
+}
+.experience_box p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* about section */
+
+.about_box {
+  background-image: url(../images/about_bg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+.about_box .about_heading {
+  font-family: var(--primary-font);
+  font-size: 20;
+  font-weight: 500;
+  color: #5187fa;
+}
+.about_box .about_details p {
+  font-family: var(--primary-font);
+  font-size: 20;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+.about_details ul li::marker {
+  color: #5187fa;
+  font-size: 30px;
+}
+
+/* service section */
+.service_heading h2 {
+  font-family: var(--primary-font);
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.service_box {
+  background-image: url(../images/service-bg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service_box2 {
+  background-image: url(../images/service-bg-2.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service_box h2 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+}
+.service_heading span,
+.about_box span,
+.service_box span {
+  color: #f171ea;
+}
+
+/* cta section */
+.cta_section {
+  background-image: url(../images/cta-bg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta_section h1{
+    font-family: var(--primary-font);
+    font-size: 34px;
+    font-weight: 600;
+}
+.cta_section p{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* footer Css  Start Here*/
+
+footer {
+  background-image: url("../images/footer.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.top_footer {
+  padding: 100px 0px;
+}
+
+.left_part {
+  margin: 0px;
+  padding: 0px;
+}
+
+.left_part p {
+  margin: 0px;
+  padding: 40px 0px;
+  font-size: 16px;
+  font-family: "Familjen Grotesk";
+  color: rgb(33, 33, 32);
+}
+
+.submit {
+  /* background: linear-gradient(45deg, rgb(251, 71, 100), rgb(248, 141, 95))
+    no-repeat; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background: linear-gradient(
+    98.07deg,
+    #8278ff 0%,
+    #ad32de 46.88%,
+    #ff80b9 96.79%
+  );
+  font-family: "Familjen Grotesk";
+  font-size: 16px;
+}
+
+.input-main input {
+  height: 26px;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(162, 162, 162);
+  font-size: 1rem;
+  font-size: 16px;
+  font-family: "Familjen Grotesk";
+}
+
+.input-main input::placeholder {
+  color: rgb(162, 162, 162);
+}
+
+.input-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.services {
+  margin-left: 20px;
+}
+
+.services h2 {
+  font-size: 20px;
+  font-family: "Familjen Grotesk";
+  font-weight: 600;
+  color: #212120;
+  margin: 0;
+  padding: 0;
+}
+
+.services ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.services ul li {
+  font-size: 16px;
+  font-family: "Familjen Grotesk";
+  padding: 10px 0px;
+}
+
+.Contact h2 {
+  font-size: 20px;
+  font-family: "Familjen Grotesk";
+  font-weight: 600;
+  color: #212120;
+  margin: 0;
+  padding: 0;
+}
+.Contact p {
+  margin: 0px;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-family: "Familjen Grotesk";
+  color: rgb(33, 33, 32);
+}
+.Contact ul {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+.Contact ul li {
+  display: flex;
+
+  margin: 0;
+
+  padding: 0;
+
+  padding: 10px 0;
+}
+.Contact ul li span {
+  font-family: "Familjen Grotesk";
+  margin-left: 10px;
+}
+.Contact ul li i {
+  display: flex;
+  font-size: 16px;
+  color: #212120;
+  padding-top: 6px;
+}
+.Location h2 {
+  font-size: 20px;
+  font-family: "Familjen Grotesk";
+  font-weight: 600;
+  color: #212120;
+  margin: 0;
+  padding: 0;
+}
+.Location p {
+  margin: 0px;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-family: "Familjen Grotesk";
+  color: rgb(33, 33, 32);
+}
+.bottom_footer {
+  background-color: #ffffff2c;
+}
+.bottom_footer img {
+  position: absolute;
+
+  margin-top: -102px;
+
+  margin-left: -2px;
+}
+.privacy_content {
+  margin: 0;
+  padding: 0;
+}
+.privacy_content p {
+  margin: 0;
+  padding: 0;
+  padding: 15px 0px;
+  font-family: "Familjen Grotesk";
+  font-size: 16px;
+}
+/* footer Css  Start Here*/
